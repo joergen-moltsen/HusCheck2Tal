@@ -3,7 +3,7 @@ package dk.huscheck.huscheck2tal;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-//TODO: 
+//TODO: test
 @SpringBootApplication
 public class HusCheck2TalApplication {
 
