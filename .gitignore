@@ -13,8 +13,23 @@ hs_err_pid*
 *.zip
 *.tar.gz
 *.rar
-
 *.log
+
+##############################
+## STS ##
+##############################
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+.apt_generated
+.factorypath
+.settings
+.springBeans
+.sts4-cache
+
 ##############################
 ## Maven
 ##############################
