@@ -3,5 +3,26 @@ spring:
     oauth2:
       client:
         registration:
-          google:
-
+          dropbox-client:
+            client-id: [id]
+            client-secret: [secret]
+            client-name: Dropbox client
+            provider: dropbox
+            redirect-uri: http://localhost:8080/login/oauth2/code/dropbox
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+         
+        provider:
+          dropbox:
+            authorization-uri: https://www.dropbox.com/oauth2/authorize
+            token-uri: https://api.dropboxapi.com/oauth2/token
+            user-info-uri: https://api.dropboxapi.com/2/users/get_current_account
+            user-info-authentication-method: header
+            #jwk-set-uri: https://www.dropbox.com/token_keys
+            user-name-attribute: name
+                        
+            
+logging:
+  level:
+    ROOT: INFO
+            
