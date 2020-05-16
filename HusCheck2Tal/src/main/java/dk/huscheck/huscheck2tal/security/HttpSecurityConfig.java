@@ -24,7 +24,7 @@ public class HttpSecurityConfig extends WebSecurityConfigurerAdapter {
 		// @formatter:off
 		http
 			.authorizeRequests(a -> a
-				.antMatchers("/", "/error", "/webjars/**", "/css/**").permitAll()
+				.antMatchers("/", "/error", "/webjars/**", "/css/**", "/img/**").permitAll()
 				.anyRequest().authenticated()
 			)
 			.logout(l -> l

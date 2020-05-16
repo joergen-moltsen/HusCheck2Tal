@@ -5,24 +5,22 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Hus Check</title>
 	<meta name="description" content="" />
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<base href="/" />
 	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap-social.css" />
 	<link rel="stylesheet" type="text/css" href="/webjars/font-awesome/css/all.min.css">
-	
-	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/fullBackground.css" />
 </head>
 
 <body>
-    <h1>Login</h1>
     <div class="container text-danger error"></div>
 
-	<div class="container unauthenticated">
-		<a class="btn btn-block btn-social btn-dropbox" href="/oauth2/authorization/dropbox-client">
-			<i class="fab fa-dropbox"></i> Sign in with Dropbox
-		</a>		
+	<div class="container d-flex h-100 justify-content-center">
+		<div class="row  align-self-center">
+			<a class="btn btn-social btn-dropbox" href="/oauth2/authorization/dropbox-client">
+				<i class="fab fa-dropbox"></i> Sign in with Dropbox </a>
+		</div>		
   	</div>
 	<div class="container authenticated" style="display:none">
 	    Logged in as: <span id="user"></span>
@@ -36,6 +34,9 @@
 	</div>
 	
 	<!-- javascript -->
+	
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/webjars/js-cookie/js.cookie.js"></script>
 	<script type="text/javascript">
 		$.ajaxSetup({
